@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a7dc0d05b2ddb2716725e2308794ddad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a7dc0d05b2ddb2716725e2308794ddad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a7dc0d05b2ddb2716725e2308794ddad = L.map(
+                "map_a7dc0d05b2ddb2716725e2308794ddad",
+                {
+                    center: [32.0824141, 76.4320124],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c5487bdf41305108407bb6eaef601078 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var tile_layer_7fd50142790eb86523a527a07cd4c74c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_d9dd4e861f0018cb659f2196044542e8 = new L.Control.MiniMap(
+                tile_layer_7fd50142790eb86523a527a07cd4c74c,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_a7dc0d05b2ddb2716725e2308794ddad.addControl(mini_map_d9dd4e861f0018cb659f2196044542e8);
+        
+    
+            var tile_layer_701825c1812b22c338e4c6a21ee41abe = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var tile_layer_52ef7059b4550c6676917333aef60c11 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var marker_aa887a706f42c08ff7c246c9759c49f0 = L.marker(
+                [32.1019608, 76.2698352],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_99cdd5b479a5c87d61ea054434baa0a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa887a706f42c08ff7c246c9759c49f0.setIcon(icon_99cdd5b479a5c87d61ea054434baa0a3);
+        
+    
+        var popup_edbcea881b49916c09c582cdf4237a3c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_acac4fe0cf4e0390a80fa680517440e6 = $(`<div id="html_acac4fe0cf4e0390a80fa680517440e6" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Bajreshwari Mata Temple</b></h3><img src='static/Images/Bajreshwari Mata Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Bajreshwari Mata Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_edbcea881b49916c09c582cdf4237a3c.setContent(html_acac4fe0cf4e0390a80fa680517440e6);
+            
+        
+
+        marker_aa887a706f42c08ff7c246c9759c49f0.bindPopup(popup_edbcea881b49916c09c582cdf4237a3c)
+        ;
+
+        
+    
+    
+            var marker_952a8fd624f20c9a5b6ca5d14c086fbb = L.marker(
+                [32.0872801, 76.2538702],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_5658e584c74a15f198425fe48277fa16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_952a8fd624f20c9a5b6ca5d14c086fbb.setIcon(icon_5658e584c74a15f198425fe48277fa16);
+        
+    
+        var popup_e9f8e2428f914247002f49df9568d598 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b04c37c62b450740e5f86741772e3adf = $(`<div id="html_b04c37c62b450740e5f86741772e3adf" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Ambika Mata Temple</b></h3><img src='static/Images/Ambika Mata Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Ambika Mata Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_e9f8e2428f914247002f49df9568d598.setContent(html_b04c37c62b450740e5f86741772e3adf);
+            
+        
+
+        marker_952a8fd624f20c9a5b6ca5d14c086fbb.bindPopup(popup_e9f8e2428f914247002f49df9568d598)
+        ;
+
+        
+    
+    
+            var marker_2b5b48d5bfc25639af28e7c764df316f = L.marker(
+                [32.1482656, 76.4185415],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_cd6bd4ac93312f58188254516eb78cb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b5b48d5bfc25639af28e7c764df316f.setIcon(icon_cd6bd4ac93312f58188254516eb78cb0);
+        
+    
+        var popup_fc47a8944bf952775fdf4b8bf06e7c34 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dbf8abea65edf8a069a44d6fd4e1510d = $(`<div id="html_dbf8abea65edf8a069a44d6fd4e1510d" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Chamunda Devi Temple</b></h3><img src='static/Images/Chamunda Devi Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Chamunda Devi Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_fc47a8944bf952775fdf4b8bf06e7c34.setContent(html_dbf8abea65edf8a069a44d6fd4e1510d);
+            
+        
+
+        marker_2b5b48d5bfc25639af28e7c764df316f.bindPopup(popup_fc47a8944bf952775fdf4b8bf06e7c34)
+        ;
+
+        
+    
+    
+            var marker_a25a06e71a236e39bdd5021bb62a3280 = L.marker(
+                [31.8757653, 76.3243512],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_0ad78cc51b0d483461bd42f4f8b02571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a25a06e71a236e39bdd5021bb62a3280.setIcon(icon_0ad78cc51b0d483461bd42f4f8b02571);
+        
+    
+        var popup_264dd23f459cd24a3e8b78348ca03c1c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_907db20022dfbedf4296bb1900168b09 = $(`<div id="html_907db20022dfbedf4296bb1900168b09" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Jwalamukhi Temple</b></h3><img src='static/Images/Jwalamukhi Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Jwalamukhi Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_264dd23f459cd24a3e8b78348ca03c1c.setContent(html_907db20022dfbedf4296bb1900168b09);
+            
+        
+
+        marker_a25a06e71a236e39bdd5021bb62a3280.bindPopup(popup_264dd23f459cd24a3e8b78348ca03c1c)
+        ;
+
+        
+    
+    
+            var marker_41d2f161680c91fa19d2d7b0ea1657d5 = L.marker(
+                [31.9679948, 76.2050242],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_e7e5662b3ae3aa5a2d18beef0fbd3f34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41d2f161680c91fa19d2d7b0ea1657d5.setIcon(icon_e7e5662b3ae3aa5a2d18beef0fbd3f34);
+        
+    
+        var popup_0493cb34b692be5e4df27c4632f91671 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62d74a98fdb2d7b93c45a0c1a3e27a23 = $(`<div id="html_62d74a98fdb2d7b93c45a0c1a3e27a23" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Bagalamukhi Temple</b></h3><img src='static/Images/Bagalamukhi Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Bagalamukhi Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_0493cb34b692be5e4df27c4632f91671.setContent(html_62d74a98fdb2d7b93c45a0c1a3e27a23);
+            
+        
+
+        marker_41d2f161680c91fa19d2d7b0ea1657d5.bindPopup(popup_0493cb34b692be5e4df27c4632f91671)
+        ;
+
+        
+    
+    
+            var marker_dbcbb1049423aa0a9cb8648f3242dc4f = L.marker(
+                [32.0507831, 76.6458738],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_0b943aae5e41f0d07f61373238af87b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbcbb1049423aa0a9cb8648f3242dc4f.setIcon(icon_0b943aae5e41f0d07f61373238af87b3);
+        
+    
+        var popup_e5bf4708e875e406d19eaeb6baa1b93a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_abe8ef1928ad135efd059f03e0f4af65 = $(`<div id="html_abe8ef1928ad135efd059f03e0f4af65" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Baijnath temple</b></h3><img src='static/Images/Baijnath temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Baijnath temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_e5bf4708e875e406d19eaeb6baa1b93a.setContent(html_abe8ef1928ad135efd059f03e0f4af65);
+            
+        
+
+        marker_dbcbb1049423aa0a9cb8648f3242dc4f.bindPopup(popup_e5bf4708e875e406d19eaeb6baa1b93a)
+        ;
+
+        
+    
+    
+            var marker_7a3f2566495e3a1610ce2fa71e28eaf7 = L.marker(
+                [32.072659, 76.1373353],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_b099a78ad3fe381caf935e6ea2f3cd1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a3f2566495e3a1610ce2fa71e28eaf7.setIcon(icon_b099a78ad3fe381caf935e6ea2f3cd1a);
+        
+    
+        var popup_7dfc6c87377215ef7aa9ab6d3741437b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5cc7be15692811f084564c6b9ecb787f = $(`<div id="html_5cc7be15692811f084564c6b9ecb787f" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Masroor Temple</b></h3><img src='static/Images/Masroor Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Masroor Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_7dfc6c87377215ef7aa9ab6d3741437b.setContent(html_5cc7be15692811f084564c6b9ecb787f);
+            
+        
+
+        marker_7a3f2566495e3a1610ce2fa71e28eaf7.bindPopup(popup_7dfc6c87377215ef7aa9ab6d3741437b)
+        ;
+
+        
+    
+    
+            var marker_feb3e80124f7220738d227b49eb4ebc6 = L.marker(
+                [32.244102, 76.3347538],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_20aec74be05651a77ef6e3d4da5bd0fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_feb3e80124f7220738d227b49eb4ebc6.setIcon(icon_20aec74be05651a77ef6e3d4da5bd0fb);
+        
+    
+        var popup_3ae382504367480b0f9af53bf856c294 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28073340b3daee05a7e61870e306c147 = $(`<div id="html_28073340b3daee05a7e61870e306c147" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Bhagsu Nag Temple</b></h3><img src='static/Images/Bhagsu Nag Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Bhagsu Nag Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_3ae382504367480b0f9af53bf856c294.setContent(html_28073340b3daee05a7e61870e306c147);
+            
+        
+
+        marker_feb3e80124f7220738d227b49eb4ebc6.bindPopup(popup_3ae382504367480b0f9af53bf856c294)
+        ;
+
+        
+    
+    
+            var marker_a20d414b7f63dc25fd98c6232fb0be29 = L.marker(
+                [32.2003655, 76.3099753],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_afb77b84ddfedc8f19ac715b3df7c2b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a20d414b7f63dc25fd98c6232fb0be29.setIcon(icon_afb77b84ddfedc8f19ac715b3df7c2b4);
+        
+    
+        var popup_d47fd19c19d32b5c2943c1c1d40340e6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83dfd706fc74e32e9c7786765232d3e4 = $(`<div id="html_83dfd706fc74e32e9c7786765232d3e4" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Kunal Pathri Temple</b></h3><img src='static/Images/Kunal Pathri/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Kunal Pathri Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_d47fd19c19d32b5c2943c1c1d40340e6.setContent(html_83dfd706fc74e32e9c7786765232d3e4);
+            
+        
+
+        marker_a20d414b7f63dc25fd98c6232fb0be29.bindPopup(popup_d47fd19c19d32b5c2943c1c1d40340e6)
+        ;
+
+        
+    
+    
+            var marker_aad0166a813ed3c7ab2ae789bbe9bde0 = L.marker(
+                [32.2944161, 75.9441588],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_8f30df32a7d31af59f47b14930aa166e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aad0166a813ed3c7ab2ae789bbe9bde0.setIcon(icon_8f30df32a7d31af59f47b14930aa166e);
+        
+    
+        var popup_e6f580ce703f5ef515f742e2f1c5a323 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_122d83cae70fb67a59c87b97258e9889 = $(`<div id="html_122d83cae70fb67a59c87b97258e9889" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Nagani Mata Temple</b></h3><img src='static/Images/Nagani Mata/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Nagani Mata Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_e6f580ce703f5ef515f742e2f1c5a323.setContent(html_122d83cae70fb67a59c87b97258e9889);
+            
+        
+
+        marker_aad0166a813ed3c7ab2ae789bbe9bde0.bindPopup(popup_e6f580ce703f5ef515f742e2f1c5a323)
+        ;
+
+        
+    
+    
+            var marker_c66638b55fbc1951b04e51ec5c76b210 = L.marker(
+                [32.1162748, 75.635425],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_7867d4f41f19baa8633168ec340742fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c66638b55fbc1951b04e51ec5c76b210.setIcon(icon_7867d4f41f19baa8633168ec340742fb);
+        
+    
+        var popup_84cbaadff0b25a8459498b21627ce21f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d1828ea7f02039ee34ce30ca8f82717 = $(`<div id="html_6d1828ea7f02039ee34ce30ca8f82717" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Kathgarh Temple</b></h3><img src='static/Images/Kathgarh Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Kathgarh Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_84cbaadff0b25a8459498b21627ce21f.setContent(html_6d1828ea7f02039ee34ce30ca8f82717);
+            
+        
+
+        marker_c66638b55fbc1951b04e51ec5c76b210.bindPopup(popup_84cbaadff0b25a8459498b21627ce21f)
+        ;
+
+        
+    
+    
+            var marker_a4905ed6d2ed62b596331b35e706d384 = L.marker(
+                [31.9979002, 76.3124092],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_2bf4ae2b39a1ddcc5faf14a0f7ccf966 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4905ed6d2ed62b596331b35e706d384.setIcon(icon_2bf4ae2b39a1ddcc5faf14a0f7ccf966);
+        
+    
+        var popup_652b05a2b28c7847a003788f8fdf875b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e91ca60f1621116662f36e0b6ebc988a = $(`<div id="html_e91ca60f1621116662f36e0b6ebc988a" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Baba Baroh Temple</b></h3><img src='static/Images/Baba Baroh Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Baba Baroh Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_652b05a2b28c7847a003788f8fdf875b.setContent(html_e91ca60f1621116662f36e0b6ebc988a);
+            
+        
+
+        marker_a4905ed6d2ed62b596331b35e706d384.bindPopup(popup_652b05a2b28c7847a003788f8fdf875b)
+        ;
+
+        
+    
+    
+            var marker_24a078d395f44a881049f7b590438cbc = L.marker(
+                [31.824402, 76.2707781],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_8f1b4fb555a451c302b428256ccdf68f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24a078d395f44a881049f7b590438cbc.setIcon(icon_8f1b4fb555a451c302b428256ccdf68f);
+        
+    
+        var popup_06e0f92ab081405c3b2b7a1de8dd2593 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dda0af869db0a5a42d880cdb83ff9d18 = $(`<div id="html_dda0af869db0a5a42d880cdb83ff9d18" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Shri Kalinath Kaleshwar Mahadev Temple</b></h3><img src='static/Images/Shri Kalinath Kaleshwar Mahadev Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Shri Kalinath Kaleshwar Mahadev Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_06e0f92ab081405c3b2b7a1de8dd2593.setContent(html_dda0af869db0a5a42d880cdb83ff9d18);
+            
+        
+
+        marker_24a078d395f44a881049f7b590438cbc.bindPopup(popup_06e0f92ab081405c3b2b7a1de8dd2593)
+        ;
+
+        
+    
+    
+            var marker_efdfcf0a0f1057f13d62c8e729a79a52 = L.marker(
+                [32.1327574, 76.5699545],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_7a76db4815b069f7f96089654fe71925 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_efdfcf0a0f1057f13d62c8e729a79a52.setIcon(icon_7a76db4815b069f7f96089654fe71925);
+        
+    
+        var popup_42a16cb54af60411b6694f92ccabc8c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96841c4b98a98ba32e65a76c0cc3db9f = $(`<div id="html_96841c4b98a98ba32e65a76c0cc3db9f" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Jakhani Mata Temple</b></h3><img src='static/Images/Jakhani Mata Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Jakhani Mata Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_42a16cb54af60411b6694f92ccabc8c0.setContent(html_96841c4b98a98ba32e65a76c0cc3db9f);
+            
+        
+
+        marker_efdfcf0a0f1057f13d62c8e729a79a52.bindPopup(popup_42a16cb54af60411b6694f92ccabc8c0)
+        ;
+
+        
+    
+    
+            var marker_fe087fa459d84f5ce8e31e592a246962 = L.marker(
+                [32.1355256, 76.5382679],
+                {}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+        
+    
+            var icon_0b825fce37bf255f497202bb99245a28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe087fa459d84f5ce8e31e592a246962.setIcon(icon_0b825fce37bf255f497202bb99245a28);
+        
+    
+        var popup_56a5920adf6b84a70e2a7d03fd4773d1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b7cab11eac8b29a68f7b570763e4a1e1 = $(`<div id="html_b7cab11eac8b29a68f7b570763e4a1e1" style="width: 100.0%; height: 100.0%;"><div class='popup' style='opacity: 0.8; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;'><h3><b>Vindhyavasini Temple</b></h3><img src='static/Images/Vindhyavasini Temple/main.jpg' style='height: 200px; width: 100%; margin-top:10px; object-fit: cover; border-radius:5%;' alt='Image'><form method='post' action='/detail' target='_blank'><input type='hidden' name='value' value='Vindhyavasini Temple'><button type='submit' style='background-color:#0d6efd; border-radius:30px; color:white; border:0; margin: 10px; margin-top:20px; padding: 10px; font-size: 16px;'>Show More</button></form></div></div>`)[0];
+                popup_56a5920adf6b84a70e2a7d03fd4773d1.setContent(html_b7cab11eac8b29a68f7b570763e4a1e1);
+            
+        
+
+        marker_fe087fa459d84f5ce8e31e592a246962.bindPopup(popup_56a5920adf6b84a70e2a7d03fd4773d1)
+        ;
+
+        
+    
+    
+            var layer_control_2b3b35383bccfbf1320b18eadf726526 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c5487bdf41305108407bb6eaef601078,
+                    "cartodbpositron" : tile_layer_701825c1812b22c338e4c6a21ee41abe,
+                    "cartodbdark_matter" : tile_layer_52ef7059b4550c6676917333aef60c11,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_2b3b35383bccfbf1320b18eadf726526.base_layers,
+                layer_control_2b3b35383bccfbf1320b18eadf726526.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "bottomleft"}
+            ).addTo(map_a7dc0d05b2ddb2716725e2308794ddad);
+            tile_layer_701825c1812b22c338e4c6a21ee41abe.remove();
+            tile_layer_52ef7059b4550c6676917333aef60c11.remove();
+        
+</script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/map.css" />
+    <link rel="stylesheet" href="/static/map-footer-styles.css" />
+    <!-- page icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="static/images/3-removebg-preview.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <a href="/"><img src="static/images/2-removebg-preview.png" class="logo" /></a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about" >About</a></li>
+          <li><a href="/show_all">Show All</a></li>
+        </ul>
+      </header>
+      <!-- start of map -->
+      <div class="map">
+        <iframe class="map-image" src="{{ url_for('use_map') }}" style="width: 100%; height: 700px; object-fit: cover;;"></iframe>
+      </div>
+      <!-- end of map -->
+
+      <!-- start of slider -->
+      
+      <!-- end of slider -->
+
+      <!-- start of outro -->
+      <div class="landing-page" style="background-color: #FFF2D8;">
+        <div class="content">
+          <div class="container">
+            <div class="info">
+              <h1>The Quest for Peace</h1>
+              <h4>Reclaim your soul and find inner peace through a transformative spiritual journey that explores the essence of existence.</h4>
+              <a href="/show_all">
+                <button>Explore All</button>
+              </a>
+            </div>
+            <div class="image">
+              <!-- <img src="https://i.postimg.cc/65QxYYzh/001234.png"> -->
+              <img src="/static/Images/ladies.svg" alt="women_image" style="width: 900px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of outro -->
+      <!-- end of  -->
+
+      <!-- Start of footer -->
+      <footer class="footer" style="margin-top: 150px;">
+        <div class="waves">
+          <div class="wave" id="wave1" style="filter: hue-rotate(173deg);"></div>
+          <div class="wave" id="wave2" style="filter: hue-rotate(173deg);"></div>
+          <div class="wave" id="wave3" style="filter: hue-rotate(173deg);"></div>
+          <div class="wave" id="wave4" style="filter: hue-rotate(173deg);"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="/about">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="/show_all">Show All</a></li>
+        </ul>
+        <p>&copy;2023 Sourab Garg | All Rights Reserved</p>
+      </footer>
+      <link rel="stylesheet" href="/static/map-footer-styles.css">
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+      <!-- end of  footer-->
+</body>
+</html>

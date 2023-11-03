@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+  }
+  body {
+    margin: 0;
+  }
+
+  main {
+    display: block;
+  }
+  ::-webkit-scrollbar {
+    background-color: white;
+    width: 0.8em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3586ff;
+    border: 2px solid white;
+  }
+  a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    padding-bottom: 0px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* background-color: #0062be; */
+    transition: 0.5s;
+  }
+  /* end main container */
+  
+  /* start nav  */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3586ff;
+    /* border-bottom: 5px solid black; */
+    /* border-bottom: 5px solid #ffe404; */
+  }
+  header .logo {
+    position: relative;
+    max-width: 200px;
+    transition: 0.3s;
+  }
+  header .logo:hover {
+    transform: scale(1.2);
+  }
+  #all-gods {
+    transition: transform 0.3s;
+}
+  #all-gods:hover {
+    transform: scale(1.1);
+  }
+  header ul {
+    position: relative;
+    display: flex;
+  }
+  header ul li {
+    list-style: none;
+  }
+  header ul li a {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 40px;
+    color: #fff;
+  }
+  header ul li a:hover {
+    color: #d21b27;
+    border-bottom: 2px solid #d21b27;
+  }
+  button.hover-effect:hover {
+    transform: scale(1.1); 
+    transition: background-color 0.3s, transform 0.3s; 
+  }
+  

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/data.css" />
+    <title>Data</title>
+  </head>
+  <body>
+
+    <!-- Start of header -->
+    <header>
+      <a href="/"><img src="static/images/2-removebg-preview.png" class="logo" /></a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about" >About</a></li>
+        <li><a href="/show_all">Show All</a></li>
+        </ul>
+      </header>
+    <!-- End of header -->
+
+    <div class="landing">
+      <div class="section__container header__container" style="padding-top: 8rem;">
+        <div class="header__image">
+          <img src="static/{{ temple_data[0]['image'] }}/main.jpg" alt="header" />
+          <img src="static/{{ temple_data[0]['image'] }}/main2.jpg" alt="header" />
+        </div>
+        <div class="header__content">
+          <div>
+            <h1>{{ temple_data[0]['name'] }}</h1>
+            <p class="section__subtitle">
+              {{ temple_data[0]['about']|safe }}
+            </p>
+            <div class="action__btns">
+              <button class="btn" >Go Home</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section__container destination__container">
+      <div class="section__header">
+        <div>
+          <h2 class="section__title">Explore {{ temple_data[0]['name'] }} in Pictures</h2>
+          <p class="section__subtitle">
+            Experience the Beauty and Splendor of {{ temple_data[0]['name'] }} Through Captivating Images
+          </p>
+        </div>
+      </div>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="static/{{ temple_data[0]['image'] }}/1.jpg" alt="destination" />
+        </div>
+        <div class="destination__card">
+          <img src="static/{{ temple_data[0]['image'] }}/2.jpg" style="object-fit: contain;" salt="destination" />
+        </div>
+        <div class="destination__card">
+          <img src="static/{{ temple_data[0]['image'] }}/3.jpg" style="object-fit: contain;" alt="destination" />
+          
+        </div>
+        <div class="destination__card">
+          <img src="static/{{ temple_data[0]['image'] }}/4.jpg" style="object-fit: contain;" alt="destination" />
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Start of about -->
+    <div class="about">
+      <div class="containerr">
+        <h1> Frequently asked questions?</h1>
+        <div class="tab">
+          <input type="radio" name = "acc" id="acc1">
+          <label for="acc1">
+            <h2>01</h2>
+            <h3>Who is {{ send_name }}?</h3>
+          </label>
+          <div class="content">
+            <p>
+              {{ temple_data[0]['who']|safe }}</p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name = "acc" id="acc2">
+          <label for="acc2">
+            <h2>02</h2>
+            <h3>Where is {{ temple_data[0]['name'] }}?</h3>
+          </label>
+          <div class="content">
+            <p>
+              {{ temple_data[0]['where']|safe }}</p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name = "acc" id="acc3">
+          <label for="acc3">
+            <h2>03</h2>
+            <h3>History of {{ temple_data[0]['name'] }}?</h3>
+          </label>
+          <div class="content">
+            <p>
+              {{ temple_data[0]['history']|safe }}</p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name = "acc" id="acc4">
+          <label for="acc4">
+            <h2>04</h2>
+            <h3>Facts about {{ temple_data[0]['name'] }}?</h3>
+          </label>
+          <div class="content">
+            <p>
+              {{ temple_data[0]['facts']|safe }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- End of about -->
+
+    <!-- Start of footer -->
+
+    <footer class="footer" style="margin-top: 250px;">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="/about">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="/show_all">Show All</a></li>
+        </ul>
+        <p>&copy;2023 Sourab Garg | All Rights Reserved</p>
+      </footer>
+      <link rel="stylesheet" href="/static/data-footer-styles.css">
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+    <!-- End of footer -->
+  </body>
+</html>

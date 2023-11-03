@@ -1,0 +1,110 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    background-color: #3586ff;
+    /* background-color: #d86c04; */
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s;
+  }
+  ::-webkit-scrollbar {
+    background-color: white;
+    width: 0.8em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    /* background-color: #d86c04; */
+    background-color: #E9B384;
+    border: 2px solid white;
+  }
+  
+  header .logo {
+    position: relative;
+    max-width: 200px;
+    transition: 0.3s;
+  }
+  header .logo:hover {
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+  }
+  header ul {
+    position: relative;
+    display: flex;
+  }
+  header ul li {
+    list-style: none;
+  }
+  header ul li a {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 40px;
+    color: #fff;
+  }
+  header ul li a:hover {
+    color: #d21b27;
+    border-bottom: 2px solid #d21b27;
+  }
+
+  /* Start Global Rules */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landing-page .content .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 140px;
+    min-height: calc(100vh - 80px);
+  }
+  
+  .landing-page .content .info h1 {
+    color: #5d5d5d;
+    font-size: 44px;
+  }
+  .landing-page .content .info h4 {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 20px;
+    color: #5d5d5d;
+  }
+
+  .landing-page .content .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #d86c04;
+    transition: 0.3s;
+  }
+  .landing-page .content .info button:hover {
+    transform: scale(1.2);
+  }
+  .landing-page .content .image img {
+    max-width: 100%;
+  }
+  /* End Landing Page */
+  
