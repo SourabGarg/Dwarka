@@ -1,5 +1,5 @@
 # Temple-Vision
-Temple Vision is the way of seeing the deity inside a temple with reverence and respect from your electronic device.
+Temple Vision a.k.a Temple Viewer or Temple Finder is the way of seeing the deity inside a temple with reverence and respect from your electronic device.
 
 
 OUTPUT:
