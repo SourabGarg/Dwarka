@@ -15,3 +15,7 @@ RESULT PAGE:
 ![image](https://github.com/SourabGarg/Temple-Vision/assets/112079423/7b93d4f5-ff49-47c4-8a7a-46f7cb9f8879)
 
 ![image](https://github.com/SourabGarg/Temple-Vision/assets/112079423/8a8d49ee-9c80-4cc0-94a4-3a14f37b9a7a)
+
+ABOUT:
+
+![image](https://github.com/SourabGarg/Temple-Vision/assets/112079423/8cdf7815-9ffb-49d4-9fa7-d24d29154c38)
