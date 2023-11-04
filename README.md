@@ -1,6 +1,5 @@
 # Temple-Vision
-Temple Vision a.k.a Temple Viewer or Temple Finder is the way of seeing the deity inside a temple with reverence and respect from your electronic device.
-
+Dwarka a.k.a Temple Viewer or Temple Finder is a virtual pilgrimage to Himachal Pradesh's temples, featuring interactive maps and temple insights for a spiritual journey from anywhere.
 
 OUTPUT:
 HOME PAGE:
